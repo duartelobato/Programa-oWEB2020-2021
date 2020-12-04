@@ -1,9 +1,98 @@
+:root {
+  --main-bg-color: blueviolet;
+}
+
+#header1 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center; 
+  background-color:var(--main-bg-color) ;  
+  text-align: center;
+        }
+
+#alunopng {padding: 10px;
+           width:200px; height:200px;
+           }
+
+section {flex-grow: 1;
+  color: white;
+}
+
+
 body {
+  color: #333333;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+  
+  
 }
 
+footer{
+  background-color: var(--main-bg-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 150px;
+  color: white;
+}
+
+#nav1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  line-height: 500%;
+}
+
+#nav2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: white ;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-style: solid;
+  border-color: var(--main-bg-color);
+  line-height: 500%;
+}
+
+#nav1 a {
+  color: white;
+  }
+
+#nav2 a {
+    color: var(--main-bg-color);
+    }
+  
+    
+    header {grid-area: h;
+    }
+    
+    #nav1 {grid-area: n1;
+    }
+
+    main {grid-area: m;    
+    }
+    
+    #nav2 {grid-area: n2;
+    }
+
+    footer {grid-area: f;
+    }
+
+  
+  body{
+    display: grid;
+    grid-template-columns:10% 80% 10%;
+    grid-template-areas: 'h h h' 'n1 m n2' 'f f f';
+    grid-gap:5px 5px;
+    
+  }
+  

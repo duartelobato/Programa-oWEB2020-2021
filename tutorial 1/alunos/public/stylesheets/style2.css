@@ -1,0 +1,28 @@
+header{font-size: 20px;}
+
+main{
+    margin-left: 30%;
+    margin-top: 5px;
+
+}
+
+#tabela{font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;}
+
+    #tabela td, #tabela th {
+        border: 1px solid rgba(192, 191, 191, 0.801);
+        padding: 5px;
+      }
+      
+      #tabela tr:nth-child(odd){background-color: #d1ccccb7;}
+      
+      #tabela tr:hover {background-color: rgb(255, 255, 255);}
+      
+      #tabela th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #e7562a;
+        color: rgb(0, 0, 0);
+      }
