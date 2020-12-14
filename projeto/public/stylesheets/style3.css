@@ -1,0 +1,33 @@
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(134, 134, 134);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  #div1 {grid-area: d1;
+  }
+  
+  #div2 {grid-area: d2;
+  }     
+
+  #div3 {grid-area: d3;
+  }
+
+  #div4 {grid-area: d4;
+  }
+
+
+  .grid-container{
+  display: grid;
+  grid-template-areas: 'd1 d1 d2 d2' 'd3 d3 d4 d4';
+  grid-gap:50% 75%;
+}
+
+
+
+
+
+
+    

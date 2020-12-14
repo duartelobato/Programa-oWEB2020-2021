@@ -1,8 +1,90 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
-a {
-  color: #00B7FF;
-}
+#medpng {padding: 10px;
+  width:200px; height:200px;
+  
+  }
+
+  :root {
+    --main-bg-color: rgb(37, 125, 141);
+  }
+  
+  #header1 {
+    display: table-column;
+    align-items: center; 
+    text-align: center;
+          }
+
+  h1{
+    font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #00B7FF;
+  }
+  
+  h2{font: 22px "Lucida Grande", Helvetica, Arial, sans-serif;}
+  
+  body {
+    color: #333333;
+    padding: 50px;
+    font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: #00B7FF;
+    
+    
+  }
+  
+  footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40%;
+    color: rgb(0, 0, 0);
+  }
+  
+  #nav1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 500%;
+  }
+  
+    
+  #nav1 a {
+    color: white;
+    }
+  
+    
+      
+      header {grid-area: h;
+      }
+      
+      #nav1 {grid-area: n1;
+      }     
+ 
+  
+      footer {grid-area: f;
+      }
+  
+    
+    body{
+      display: grid;
+      grid-template-areas: 'h h h' 'n1 n1 n1' 'f f f';
+      grid-gap:5px 5px;
+      
+    }
+
+    .button {
+      background-color: #2988a0;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+  
